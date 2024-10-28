@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light background */
+    background-image: url("eino-iWFLkqka9vU-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive; /* Cursive font for headings */
+    color: #c4c3c3b1;
+    
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Align elements vertically to the center */
+    /* border: 2px solid black; */
+    width: 50vw;
+    height: max-content;
+    transform: translate(50%);
+    flex-direction: column; /* Stack elements vertically */
+}
+
+.wk{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mk{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    /* background-image: linear-gradient(135deg, #f0f0f0 25%, transparent 25%), linear-gradient(-135deg, #f0f0f0 25%, transparent 25%); */
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    width: 80%; /* Center the list box and make it responsive */
+    margin: auto; /* Center the list box */
+    height: auto; /* Dynamically adjust height based on content */
+    overflow-y: auto; /* Add scrollbar if content exceeds height */
+    max-height: 500px; /* Set maximum height for responsiveness */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+
+    /* Ruled lines like a notebook */
+}
+
+li {
+    padding: 10px;
+    margin: 10px 10px;
+    background: #f0f0f0; /* Light background */
+    border-radius: 7px;
+    font-family: 'Comic Sans MS', cursive; /* Cursive font for list items */
+    border: 1px solid #ccc; /* Add a line to separate list items */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.655);
+
+}
+
+li:last-child {
+    border-bottom: none; /* Remove border from the last list item */
+}
+
+input[type="text"] {
+    width: 100%; /* Shorten the input box */
+    padding: 12px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS', cursive; /* Cursive font for input */
+    border: 1px solid #ccc; /* Add a line to separate list items */
+    border-radius: 10px; /* Make border wavy */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+button {
+    width: 5vw;
+    padding: 12px 10px;
+    text-align: center;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Comic Sans MS', cursive; /* Cursive font for buttons */
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+    ul {
+        width: 90%;
+    }
+    input[type="text"] {
+        width: 70%;
+    }
+    button {
+        width: 40%;
+    }
+}
+
+@media (max-width: 480px) {
+    ul {
+        width: 95%;
+    }
+    input[type="text"] {
+        width: 80%;
+    }
+    button {
+        width: 50%;
+    }
+}
